@@ -1,0 +1,11 @@
+{
+  // Optional independent Cloudflare Workers deployment after npm run build.
+  // No account IDs, credentials, database bindings or secrets are included.
+  "name": "hidromet-bmkg-2026",
+  "main": "./dist/server/index.js",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "no_bundle": true,
+  "rules": [{"type": "ESModule", "globs": ["**/*.js", "**/*.mjs"]}],
+  "assets": {"directory": "./dist/client"}
+}
